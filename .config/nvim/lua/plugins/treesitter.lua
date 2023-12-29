@@ -4,9 +4,14 @@ return {
   config = function() 
     local config = require("nvim-treesitter.configs")
     config.setup({
-      ensure_installed = { "c", "lua", "javascript"},
-      highlight = { enable = true },
-      indent = {enable = true },
+      ensure_installed = { "c", "lua", "javascript", "rust", },
+      highlight = {
+        enable = true,
+        additional_vim_regex_highlighting = false,
+      },
+      indent = {
+        enable = true
+      },
     })
   end
 }

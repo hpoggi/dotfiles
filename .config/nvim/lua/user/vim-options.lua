@@ -39,6 +39,17 @@ opt.foldexpr = "nvim_treesitter#foldexpr()"
 opt.foldlevel = 99
 
 
+local autocmd = vim.api.nvim_create_autocmd
+local augroup = vim.api.nvim_create_augroup
+
+autocmd("TextYankPost", {
+	callback = function()
+		vim.highlight.on_yank()
+	end,
+	desc = "Briefly highlight yanked text",
+	group = augroup("yank", { clear = true }),
+})
+
 --vim.cmd("set expandtab")
 --vim.cmd("set tabstop=2")
 --vim.cmd("set softtabstop=2")

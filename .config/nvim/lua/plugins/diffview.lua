@@ -10,16 +10,16 @@ local M = {
 }
 
 function M.config() end
- keymaps = {
-                view = {
-                    ["<C-g>"] = "<CMD>DiffviewClose<CR>",
-                    --["c"] = "<CMD>DiffviewClose|Neogit commit<CR>",
-                },
-                file_panel = {
-                    ["<C-g>"] = "<CMD>DiffviewClose<CR>",
-                    --["c"] = "<CMD>DiffviewClose|Neogit commit<CR>",
-                },
-                use_icons = false,
-            },
-
+ -- keymaps = {
+ --                view = {
+ --                    ["<C-g>"] = "<CMD>DiffviewClose<CR>",
+ --                    --["c"] = "<CMD>DiffviewClose|Neogit commit<CR>",
+ --                },
+ --                file_panel = {
+ --                    ["<C-g>"] = "<CMD>DiffviewClose<CR>",
+ --                    --["c"] = "<CMD>DiffviewClose|Neogit commit<CR>",
+ --                },
+ --                use_icons = false,
+ --            },
+ --
 return M

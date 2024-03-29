@@ -1,0 +1,4 @@
+//https://codeberg.org/ThomasHighbaugh/nvim-forge/src/branch/main/lua/plugins/diffview.lua
+
+rmdir ~/.config/nvim
+ln -s ~/dotfiles/.config/nvim ~/.config

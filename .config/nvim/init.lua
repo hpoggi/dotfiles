@@ -1,4 +1,3 @@
-vim.print('init')
 require("user")
 -- This is NeoVim's recommended way to solve clipboard sharing if you use WSL
 --   -- See: https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl
